@@ -40,11 +40,17 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <a href="#">Esqueceu a sua senha?</a>
+                        <a href="{{route('password.request')}}">Esqueceu a sua senha?</a>
                         <button type="submit" class="btn btn-primary px-4">Entrar</button>
                     </div>
 
                 </form>
+
+                @if(session('status'))
+                    <div class="alert alert-success text-center mt-3">
+                        {{session('status')}}
+                    </div>
+                @endif
 
             </div>
 

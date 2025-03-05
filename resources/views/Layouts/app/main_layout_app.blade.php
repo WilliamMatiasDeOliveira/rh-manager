@@ -17,6 +17,8 @@
 
 <body>
 
+    @include('Layouts.partials.user_bar')
+
     @yield('content')
 
     <!-- resources -->
